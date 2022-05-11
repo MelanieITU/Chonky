@@ -140,6 +140,7 @@ export const GridEntryPreviewFile: React.FC<FileEntryPreviewProps> = React.memo(
     });
     return (
         <div className={className}>
+            <div style={{ position: 'absolute', backgroundColor: 'red', top: 0, right: 0, zIndex : 1000 }} onClick={() => console.log("Cliqué") }>TEST</div>
             <GridEntryDndIndicator className={fileClasses.dndIndicator} dndState={dndState} />
             <div className={fileClasses.fileIcon}>
                 <ChonkyIcon icon={entryState.icon} spin={entryState.iconSpin} />

@@ -60,6 +60,9 @@ export const ListEntry: React.FC<FileEntryProps> = React.memo(
                     <FileEntryName file={file} />
                 </div>
                 <div className={classes.listFileEntryProperty}>
+                    TEST
+                </div>
+                <div className={classes.listFileEntryProperty}>
                     {file ? (
                         fileModDateString ?? <span>—</span>
                     ) : (
